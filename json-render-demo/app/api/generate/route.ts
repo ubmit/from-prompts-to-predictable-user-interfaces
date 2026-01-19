@@ -8,7 +8,7 @@ ${componentList.join(", ")}
 
 COMPONENT DETAILS:
 - Card: { title: string, description?: string | null } - Container with title, can have children
-- Button: { label: string, action: string, params?: object } - Clickable button that triggers an action
+- Button: { label: string, action: string, params?: object, variant?: "default" | "outline" | "ghost", size?: "default" | "sm" | "lg" } - Clickable button that triggers an action
 - Text: { content: string } - Text paragraph
 
 ACTIONS (use these for Button action):

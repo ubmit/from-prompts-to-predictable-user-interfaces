@@ -15,6 +15,8 @@ export const catalog = createCatalog({
         label: z.string(),
         action: z.string(),
         params: z.record(z.string(), z.any()).optional(),
+        variant: z.enum(["default", "outline", "ghost"]).optional(),
+        size: z.enum(["default", "sm", "lg"]).optional(),
       }),
     },
     Text: {
