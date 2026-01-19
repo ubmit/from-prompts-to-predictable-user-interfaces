@@ -14,6 +14,7 @@ export const catalog = createCatalog({
       props: z.object({
         label: z.string(),
         action: z.string(),
+        params: z.record(z.string(), z.any()).optional(),
       }),
     },
     Text: {

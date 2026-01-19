@@ -8,10 +8,10 @@ ${componentList.join(", ")}
 
 COMPONENT DETAILS:
 - Card: { title: string, description?: string | null } - Container with title, can have children
-- Button: { label: string, action: { name: string, params: object } } - Clickable button that triggers an action
+- Button: { label: string, action: string, params?: object } - Clickable button that triggers an action
 - Text: { content: string } - Text paragraph
 
-ACTIONS (use these for Button action.name):
+ACTIONS (use these for Button action):
 - submit: params { formId: string }
 - navigate: params { url: string }
 
@@ -43,7 +43,7 @@ EXAMPLE - Welcome Card:
 {"op":"set","path":"/root","value":"welcome-card"}
 {"op":"add","path":"/elements/welcome-card","value":{"key":"welcome-card","type":"Card","props":{"title":"Welcome","description":"Hello there!"},"children":["greeting-text","action-btn"]}}
 {"op":"add","path":"/elements/greeting-text","value":{"key":"greeting-text","type":"Text","props":{"content":"Thanks for visiting our app."}}}
-{"op":"add","path":"/elements/action-btn","value":{"key":"action-btn","type":"Button","props":{"label":"Get Started","action":{"name":"navigate","params":{"url":"/dashboard"}}}}}
+{"op":"add","path":"/elements/action-btn","value":{"key":"action-btn","type":"Button","props":{"label":"Get Started","action":"navigate","params":{"url":"/home"}}}}
 
 Generate JSONL patches now:`;
 
