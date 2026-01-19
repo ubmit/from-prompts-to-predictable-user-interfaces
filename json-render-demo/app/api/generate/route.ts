@@ -8,8 +8,12 @@ ${componentList.join(", ")}
 
 COMPONENT DETAILS:
 - Card: { title: string, description?: string | null } - Container with title, can have children
-- Button: { label: string, action: string } - Clickable button that triggers an action
+- Button: { label: string, action: { name: string, params: object } } - Clickable button that triggers an action
 - Text: { content: string } - Text paragraph
+
+ACTIONS (use these for Button action.name):
+- submit: params { formId: string }
+- navigate: params { url: string }
 
 OUTPUT FORMAT:
 Output JSONL where each line is a patch operation. Use a FLAT key-based structure:
@@ -39,7 +43,7 @@ EXAMPLE - Welcome Card:
 {"op":"set","path":"/root","value":"welcome-card"}
 {"op":"add","path":"/elements/welcome-card","value":{"key":"welcome-card","type":"Card","props":{"title":"Welcome","description":"Hello there!"},"children":["greeting-text","action-btn"]}}
 {"op":"add","path":"/elements/greeting-text","value":{"key":"greeting-text","type":"Text","props":{"content":"Thanks for visiting our app."}}}
-{"op":"add","path":"/elements/action-btn","value":{"key":"action-btn","type":"Button","props":{"label":"Get Started","action":"navigate"}}}
+{"op":"add","path":"/elements/action-btn","value":{"key":"action-btn","type":"Button","props":{"label":"Get Started","action":{"name":"navigate","params":{"url":"/dashboard"}}}}}
 
 Generate JSONL patches now:`;
 
