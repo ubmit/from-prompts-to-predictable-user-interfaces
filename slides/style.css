@@ -1,0 +1,267 @@
+/* Dark theme overrides for minimalist black slides */
+
+:root {
+  --slidev-theme-primary: #3b82f6;
+}
+
+/* Force dark background and light text globally */
+html,
+body,
+#app,
+.slidev-layout {
+  background: #0a0a0a !important;
+  color: #f5f5f5 !important;
+}
+
+/* Slide backgrounds */
+.slidev-page {
+  background: #0a0a0a !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff !important;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+/* Paragraph and general text */
+p, li, div {
+  color: #e5e5e5;
+  line-height: 1.6;
+}
+
+/* Code blocks */
+pre, code {
+  background: #1a1a1a !important;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+}
+
+code {
+  color: #e5e5e5 !important;
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+pre code {
+  padding: 0;
+  border: none;
+}
+
+/* Links */
+a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+/* Gray text utility */
+.text-gray-400 {
+  color: #a3a3a3 !important;
+}
+
+.text-gray-600 {
+  color: #737373 !important;
+}
+
+/* Color utilities */
+.text-blue-400 {
+  color: #60a5fa !important;
+}
+
+.text-green-400 {
+  color: #4ade80 !important;
+}
+
+.text-red-400 {
+  color: #f87171 !important;
+}
+
+.text-yellow-400 {
+  color: #facc15 !important;
+}
+
+/* Mermaid diagrams - dark theme */
+.mermaid {
+  background: transparent !important;
+}
+
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Images */
+img {
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+/* Cover page specific */
+.slidev-layout.cover h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #a3a3a3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section dividers */
+.slidev-layout.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slidev-layout.section h1 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+/* Two columns layout */
+.slidev-layout.two-cols .grid {
+  gap: 2rem;
+}
+
+/* Click animations */
+.slidev-vclick-target {
+  transition: all 0.3s ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+/* Slide numbers and navigation */
+.slidev-page-number,
+.slidev-layout-bottom {
+  color: #737373 !important;
+}
+
+/* Fix for white backgrounds that might appear */
+.bg-white {
+  background: #0a0a0a !important;
+}
+
+/* Ensure arrows and controls are visible */
+.slidev-icon-btn {
+  color: #a3a3a3 !important;
+}
+
+.slidev-icon-btn:hover {
+  color: #f5f5f5 !important;
+}
+
+/* Grid improvements */
+.grid {
+  gap: 2rem;
+}
+
+/* Spacing utilities */
+.mt-4 { margin-top: 1rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-12 { margin-top: 3rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-8 { margin-bottom: 2rem; }
+
+/* Better contrast for important text */
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+/* Make sure tables are visible if used */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #2a2a2a;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background: #1a1a1a;
+  font-weight: 600;
+}
+
+/* Emoji sizing */
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+/* Center alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Improve code block readability */
+.shiki {
+  background: #1a1a1a !important;
+  padding: 1.5rem !important;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.shiki code {
+  background: transparent !important;
+  color: #e5e5e5 !important;
+}
+
+/* Better spacing for content */
+.slidev-layout.center {
+  padding: 2rem 4rem;
+}
+
+/* Make sure dark theme is applied to all elements */
+* {
+  border-color: #2a2a2a;
+}
+
+/* Fix any light backgrounds */
+.bg-light,
+.bg-white,
+[class*="bg-gray-"] {
+  background: #0a0a0a !important;
+}
