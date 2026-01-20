@@ -9,7 +9,7 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
-    intent: {
+    variant: {
       control: "select",
       options: ["primary", "neutral", "subtle"],
     },
@@ -26,10 +26,10 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-// Primary intent stories
+// Primary variant stories
 export const PrimaryDefaultMedium: Story = {
   args: {
-    intent: "primary",
+    variant: "primary",
     size: "medium",
     children: "Button",
   },
@@ -37,7 +37,7 @@ export const PrimaryDefaultMedium: Story = {
 
 export const PrimaryHoverMedium: Story = {
   args: {
-    intent: "primary",
+    variant: "primary",
     size: "medium",
     children: "Button",
   },
@@ -48,17 +48,17 @@ export const PrimaryHoverMedium: Story = {
 
 export const PrimaryDisabledMedium: Story = {
   args: {
-    intent: "primary",
+    variant: "primary",
     size: "medium",
     children: "Button",
     disabled: true,
   },
 };
 
-// Neutral intent stories
+// Neutral variant stories
 export const NeutralDefaultMedium: Story = {
   args: {
-    intent: "neutral",
+    variant: "neutral",
     size: "medium",
     children: "Button",
   },
@@ -66,7 +66,7 @@ export const NeutralDefaultMedium: Story = {
 
 export const NeutralHoverMedium: Story = {
   args: {
-    intent: "neutral",
+    variant: "neutral",
     size: "medium",
     children: "Button",
   },
@@ -77,17 +77,17 @@ export const NeutralHoverMedium: Story = {
 
 export const NeutralDisabledMedium: Story = {
   args: {
-    intent: "neutral",
+    variant: "neutral",
     size: "medium",
     children: "Button",
     disabled: true,
   },
 };
 
-// Subtle intent stories
+// Subtle variant stories
 export const SubtleDefaultMedium: Story = {
   args: {
-    intent: "subtle",
+    variant: "subtle",
     size: "medium",
     children: "Button",
   },
@@ -95,7 +95,7 @@ export const SubtleDefaultMedium: Story = {
 
 export const SubtleHoverMedium: Story = {
   args: {
-    intent: "subtle",
+    variant: "subtle",
     size: "medium",
     children: "Button",
   },
@@ -106,17 +106,17 @@ export const SubtleHoverMedium: Story = {
 
 export const SubtleDisabledMedium: Story = {
   args: {
-    intent: "subtle",
+    variant: "subtle",
     size: "medium",
     children: "Button",
     disabled: true,
   },
 };
 
-// Primary small intents
+// Primary small variants
 export const PrimarySmall: Story = {
   args: {
-    intent: "primary",
+    variant: "primary",
     size: "small",
     children: "Button",
   },
@@ -124,7 +124,7 @@ export const PrimarySmall: Story = {
 
 export const PrimaryHoverSmall: Story = {
   args: {
-    intent: "primary",
+    variant: "primary",
     size: "small",
     children: "Button",
   },
@@ -135,17 +135,17 @@ export const PrimaryHoverSmall: Story = {
 
 export const PrimaryDisabledSmall: Story = {
   args: {
-    intent: "primary",
+    variant: "primary",
     size: "small",
     children: "Button",
     disabled: true,
   },
 };
 
-// Neutral small intents
+// Neutral small variants
 export const NeutralSmall: Story = {
   args: {
-    intent: "neutral",
+    variant: "neutral",
     size: "small",
     children: "Button",
   },
@@ -153,7 +153,7 @@ export const NeutralSmall: Story = {
 
 export const NeutralHoverSmall: Story = {
   args: {
-    intent: "neutral",
+    variant: "neutral",
     size: "small",
     children: "Button",
   },
@@ -164,17 +164,17 @@ export const NeutralHoverSmall: Story = {
 
 export const NeutralDisabledSmall: Story = {
   args: {
-    intent: "neutral",
+    variant: "neutral",
     size: "small",
     children: "Button",
     disabled: true,
   },
 };
 
-// Subtle small intents
+// Subtle small variants
 export const SubtleSmall: Story = {
   args: {
-    intent: "subtle",
+    variant: "subtle",
     size: "small",
     children: "Button",
   },
@@ -182,7 +182,7 @@ export const SubtleSmall: Story = {
 
 export const SubtleHoverSmall: Story = {
   args: {
-    intent: "subtle",
+    variant: "subtle",
     size: "small",
     children: "Button",
   },
@@ -193,7 +193,7 @@ export const SubtleHoverSmall: Story = {
 
 export const SubtleDisabledSmall: Story = {
   args: {
-    intent: "subtle",
+    variant: "subtle",
     size: "small",
     children: "Button",
     disabled: true,

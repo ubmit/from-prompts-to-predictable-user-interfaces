@@ -6,63 +6,37 @@ import { Button as BaseButton } from "@base-ui/react/button";
 export interface ButtonProps
   extends
     Omit<React.ComponentPropsWithoutRef<typeof BaseButton>, "disabled">,
-    VariantProps<typeof button> {}
+    VariantProps<typeof buttonVariants> {}
 
-const button = cva(
-  [
-    "inline-flex",
-    "items-center",
-    "justify-center",
-    "gap-2",
-    "border",
-    "font-body",
-    "font-normal",
-    "leading-none",
-    "rounded-md",
-    "transition-colors",
-  ],
+const buttonVariants = cva(
+  "inline-flex items-center justify-center gap-2 border font-body font-normal leading-none rounded-md transition-colors",
   {
     variants: {
-      intent: {
-        primary: [
-          "bg-bg-brand",
-          "text-brand-on-brand",
-          "border-border-primary",
-          "hover:bg-bg-brand-hover",
-        ],
-        neutral: [
-          "bg-bg-neutral",
-          "text-default",
-          "border",
-          "border-border-neutral",
-          "hover:bg-bg-neutral-hover",
-        ],
-        subtle: [
-          "bg-transparent",
-          "text-default",
-          "border-0",
-          "border-transparent",
-          "hover:border-border-subtle",
-          "hover:border",
-          "disabled:border",
-        ],
+      variant: {
+        primary:
+          "bg-bg-brand text-brand-on-brand border-border-primary hover:bg-bg-brand-hover",
+        neutral:
+          "bg-bg-neutral text-default border border-border-neutral hover:bg-bg-neutral-hover",
+        subtle: "text-default border-transparent",
       },
       size: {
-        small: ["h-8", "p-sm", "text-sm"],
-        medium: ["h-10", "p-md", "text-base"],
+        small: "h-8 p-sm text-sm",
+        medium: "h-10 p-md text-base",
       },
       disabled: {
         false: null,
-        true: [
-          "bg-bg-disabled",
-          "text-disabled",
-          "cursor-not-allowed",
-          "border-border-disabled",
-        ],
+        true: "bg-bg-disabled text-disabled cursor-not-allowed border-border-disabled",
       },
     },
+    compoundVariants: [
+      {
+        variant: "subtle",
+        disabled: false,
+        className: "hover:border-border-subtle",
+      },
+    ],
     defaultVariants: {
-      intent: "primary",
+      variant: "primary",
       size: "medium",
       disabled: false,
     },
@@ -71,7 +45,7 @@ const button = cva(
 
 export function Button({
   className,
-  intent,
+  variant,
   size,
   children,
   disabled,
@@ -79,7 +53,7 @@ export function Button({
 }: ButtonProps) {
   return (
     <BaseButton
-      className={button({ intent, size, disabled, className })}
+      className={buttonVariants({ variant, size, disabled, className })}
       disabled={disabled || undefined}
       {...props}
     >
