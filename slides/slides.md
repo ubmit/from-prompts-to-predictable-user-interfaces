@@ -32,14 +32,10 @@ layout: center
 ---
 
 <div class="flex flex-col items-center justify-center h-full">
-  <h1 class="text-5xl font-bold mb-12">The Problem</h1>
-
-  <div class="text-4xl font-semibold text-white mb-16">
-    AI-generated UIs are naturally unpredictable
-  </div>
+  <h1 class="text-5xl font-bold">AI-generated UIs are naturally unpredictable</h1>
 
   <v-click>
-    <div class="space-y-4 text-2xl text-gray-400">
+    <div class="mt-12 space-y-4 text-2xl text-gray-400">
       <div>→ Same prompt, different outputs</div>
       <div>→ Hard to reproduce results</div>
       <div>→ Difficult to maintain consistency</div>
@@ -47,19 +43,16 @@ layout: center
   </v-click>
 </div>
 
+<!-- The Problem -->
 ---
 layout: center
 ---
 
 <div class="flex flex-col items-center justify-center h-full">
-  <h1 class="text-5xl font-bold mb-12">The Solution</h1>
-
-  <div class="text-4xl font-semibold text-white mb-16">
-    Constraints enable predictability
-  </div>
+  <h1 class="text-5xl font-bold">Constraints enable predictability</h1>
 
   <v-click>
-    <div class="grid grid-cols-3 gap-16 text-center px-12">
+    <div class="grid grid-cols-3 gap-16 text-center px-12 mt-12">
       <div class="flex flex-col items-center">
         <div class="text-7xl mb-6">📋</div>
         <div class="text-2xl font-semibold text-white mb-2">Structured Output</div>
@@ -79,6 +72,7 @@ layout: center
   </v-click>
 </div>
 
+<!-- The Solution -->
 ---
 layout: section
 ---
@@ -192,20 +186,17 @@ Generate JSONL patches now:`;
 ```
 
 <div class="flex items-center justify-center mt-4 text-sm text-gray-400">
-Catalog → System Prompt → Patches
+Catalog → System Prompt → JSONL Patches
 </div>
 
 ---
 layout: center
 ---
 
-# Example Output
+<img src="/screenshots/json-render-streaming.png" class="rounded-lg shadow-xl mx-auto" style="max-height: 480px;" />
 
-<!--TODO: add screenshot-->
-<!--<img src="/screenshots/json-render-streaming.png" class="rounded-lg shadow-xl mx-auto" style="max-height: 480px;" />-->
-
-<div class="mt-4 text-sm text-gray-400">
-Prompt → JSONL patches → React components
+<div class="flex items-center justify-center mt-4 text-sm text-gray-400">
+"Build a pricing page" → JSON → UI
 </div>
 
 ---
@@ -219,9 +210,10 @@ class: 'text-center'
 json-render streaming UI generation
 </div>
 
-<div class="mt-12">
-→ Open http://localhost:3000
-</div>
+<!--
+PROMPT: welcome card for everyone at FE.OPO #9 and a button that navigates to their website https://frontendporto.dev/
+DEMO: http://localhost:3000
+-->
 
 ---
 layout: section
