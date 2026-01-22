@@ -1,7 +1,6 @@
 import * as React from "react";
-import { cva, type VariantProps } from "class-variance-authority";
-
 import { Button as BaseButton } from "@base-ui/react/button";
+import { cva, type VariantProps } from "class-variance-authority";
 
 export interface ButtonProps
   extends
@@ -13,11 +12,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary:
-          "bg-bg-brand text-brand-on-brand border-border-primary hover:bg-bg-brand-hover",
-        neutral:
-          "bg-bg-neutral text-default border border-border-neutral hover:bg-bg-neutral-hover",
-        subtle: "text-default border-transparent",
+        primary: "bg-bg-brand text-brand-on-brand",
+        neutral: "bg-bg-neutral text-default",
+        subtle: "bg-transparent text-default border-transparent",
       },
       size: {
         small: "h-8 p-sm text-sm",
@@ -29,6 +26,16 @@ const buttonVariants = cva(
       },
     },
     compoundVariants: [
+      {
+        variant: "primary",
+        disabled: false,
+        className: "border-border-primary hover:bg-bg-brand-hover",
+      },
+      {
+        variant: "neutral",
+        disabled: false,
+        className: "border-border-neutral hover:bg-bg-neutral-hover",
+      },
       {
         variant: "subtle",
         disabled: false,
