@@ -6,9 +6,9 @@ Quick reference for running the talk "From prompts to predictable user interface
 
 ### Must Complete Before Talk
 
-- [ ] **Capture screenshots** (15 min) - See `slides/public/screenshots/README.md`
-- [ ] **Install dependencies** (20 min) - See commands below
-- [ ] **Test all demos** (10 min) - Ensure each runs without errors
+- [x] **Capture screenshots** (15 min) - See `slides/public/screenshots/README.md`
+- [x] **Install dependencies** (20 min) - See commands below
+- [x] **Test all demos** (10 min) - Ensure each runs without errors
 - [ ] **Practice run** (1-2 hours) - Time yourself, aim for 28 min + 2 min Q&A
 
 **Total critical work:** ~45 minutes minimum
@@ -96,7 +96,7 @@ xdg-open http://localhost:3030
 
 **Prompt for localhost:3000:**
 ```
-Create a welcome card with a title "Welcome to the Demo", description "This shows how AI generates predictable UIs using structured output", and a button labeled "Get Started" that navigates to /home
+Create a welcome card for the Frontend.OPO #9 event with a button that navigates to their website https://frontendporto.dev/
 ```
 
 **Expected:** Card → Text → Button streaming in real-time
@@ -239,10 +239,10 @@ pnpm install
 
 Before the talk, capture these in `slides/public/screenshots/`:
 
-- [ ] `json-render-streaming.png` - json-render demo output
-- [ ] `feedback-loop-form.png` - Login form
-- [ ] `figma-button-variants.png` - Figma Button variants
-- [ ] `design-system-storybook.png` - Storybook UI
+- [x] `json-render-streaming.png` - json-render demo output
+- [x] `feedback-loop-form.png` - Login form
+- [x] `figma-button-variants.png` - Figma Button variants
+- [x] `design-system-storybook.png` - Storybook UI
 
 **See:** `slides/public/screenshots/README.md` for detailed capture guide
 
@@ -291,14 +291,14 @@ backups/
 
 ## ✅ Final Checklist (5 min before talk)
 
-- [ ] All 4 terminals running demos
-- [ ] All browser tabs open (3000, 3001, 6006, 3030)
-- [ ] Figma file open
-- [ ] Code editor open to repo
-- [ ] Terminal ready for /agent-browser
+- [x] All 4 terminals running demos
+- [x] All browser tabs open (3000, 3001, 6006, 3030)
+- [x] Figma file open
+- [x] Code editor open to repo
+- [x] Terminal ready for /agent-browser
 - [ ] Backup files accessible
-- [ ] Demo prompts ready to paste
-- [ ] Presenter mode active (press 'P' in slides)
+- [x] Demo prompts ready to paste
+- [x] Presenter mode active (press 'P' in slides)
 - [ ] Timer ready (30 min)
 - [ ] Water nearby
 - [ ] Deep breath 😊

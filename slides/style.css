@@ -70,6 +70,21 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Remove borders and underlines from github link */
+.github-link {
+  border: none !important;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.github-link:hover {
+  border: none !important;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
 /* Gray text utility */
 .text-gray-400 {
   color: #a3a3a3 !important;

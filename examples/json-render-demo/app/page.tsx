@@ -90,7 +90,7 @@ export default function Page() {
               </div>
 
               {/* Right Panel - Preview */}
-              <div className="flex flex-col">
+              <div className="flex flex-col w-screen">
                 <div className="border-b border-[#262626] px-4 py-2 flex gap-2">
                   <button className="px-3 py-1 text-sm rounded bg-[#1a1a1a] text-[#ededed]">
                     preview
